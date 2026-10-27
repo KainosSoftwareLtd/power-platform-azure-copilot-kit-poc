@@ -1,4 +1,4 @@
-# dataverse-github-copilot-kit
+# power-platform-azure-copilot-kit
 
 Reusable GitHub Copilot customisations for Microsoft Power Platform and related Azure development.
 
