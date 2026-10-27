@@ -7,17 +7,19 @@ applyTo: 'examples/kainos-standards-poc/**/*.md'
 
 > POC ONLY: This file demonstrates the instruction format. The examples are generic and are not approved Kainos standards.
 
-When real organizational standards are available, replace the illustrative guidance below with approved wording and record its authoritative source, owner, and review date.
+This checked-in file demonstrates file-scoped instructions only. Approved Kainos-wide standards should be managed through GitHub organisation custom instructions; do not treat this POC or its generic examples as authoritative policy.
+
+If an approved standard is intentionally demonstrated here, include only the approved wording and record its authoritative source, owner, review date, and scope.
 
 ## Illustrative Documentation Guidance
 
 - Use a clear title and descriptive section headings.
 - Write procedures as numbered steps and keep each step focused on one action.
-- Link to authoritative product documentation when explaining platform behavior.
+- Link to authoritative product documentation when explaining platform behaviour.
 
-## Replace Before Adoption
+## POC Metadata
 
-- **Authoritative source:** TODO - link the approved Kainos standard.
-- **Owner:** TODO - identify the team responsible for maintaining the standard.
-- **Last reviewed:** TODO - add the approval or review date.
-- **Scope:** TODO - define the projects and file types where the standard applies.
+- **Authoritative source:** None. This POC contains no approved Kainos standards.
+- **Owner:** TODO - identify the team responsible for any approved standard.
+- **Last reviewed:** Not applicable until approved content is added.
+- **Scope:** `examples/kainos-standards-poc/**/*.md` only.

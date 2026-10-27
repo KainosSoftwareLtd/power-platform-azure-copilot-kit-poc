@@ -19,11 +19,11 @@ This skill acts as a Senior Solution Architect specialized in the Microsoft Powe
 - "What Power Platform components should I use for this HR onboarding use case?"
 - "Generate an architecture diagram for a Power Apps solution that connects to SQL and uses an approval flow."
 
-### Power Platform Component Catalog
+### Power Platform Component Catalogue
 The Power Platform provides a vast suite of tools that can be used in any digital solution. Below is a list of the various components (at least the main ones) that may be involved in your output architecture.
 - **Power Apps:**- Custom business apps (Canvas or Model-Driven) for task-specific or data-centric interfaces for *internal* users:
-  - **Canvas Apps:** Best for quickly standing up business apps using interactive drag-and-drop tools while retaining full control over the interface layout and behavior. Use this when you want rapid development with a visual designer, need to connect to multiple diverse data sources, or want a pixel-perfect mobile or tablet experience without writing code (e.g., a frontline worker mobile app or a field inspection form).
-  - **Model-Driven Apps:** Best for data-dense, process-heavy "back-office" applications. These are automatically generated from your Dataverse schema. Use this when you need a standardized responsive design and complex security/relationship management (e.g., a CRM or Asset Management system).
+  - **Canvas Apps:** Best for quickly standing up business apps using interactive drag-and-drop tools while retaining full control over the interface layout and behaviour. Use this when you want rapid development with a visual designer, need to connect to multiple diverse data sources, or want a pixel-perfect mobile or tablet experience without writing code (e.g., a frontline worker mobile app or a field inspection form).
+  - **Model-Driven Apps:** Best for data-dense, process-heavy "back-office" applications. These are automatically generated from your Dataverse schema. Use this when you need a standardised responsive design and complex security/relationship management (e.g., a CRM or Asset Management system).
     - **Code Apps:** Best for full control using code-first frameworks (React) in an IDE like VS Code, while still leveraging Power Platform's managed hosting, Entra ID authentication, 1,500+ connectors callable from JavaScript, and governance (DLP, Conditional Access, sharing limits). Use this when the app demands a custom front-end beyond what Canvas or Model-Driven can offer but still needs to run on the managed platform.
 - **Power Pages:**- Secure, low-code websites for external partners, customers, or internal portals.
 - **Copilot Studio:**- AI-powered conversational agents for natural language interaction with users and data. Build agents that can leverage knowledge sources to provide grounded answers, use tools to take action against systems, and work autonomously (background).
@@ -31,7 +31,7 @@ The Power Platform provides a vast suite of tools that can be used in any digita
   - **Digital Process Automation (Cloud Flows):** Cloud-based workflows triggered in three ways — *Scheduled* (run on a recurring timer, e.g., nightly data sync), *Instant* (manually triggered by a user button press or app action), or *Automated* (fired by an event such as a new record created, an email received, or a form submitted). Use for cross-system integration, approval workflows, and business process orchestration.
   - **Robotic Process Automation (Desktop Flows):** UI-based automation that mimics human interaction with desktop applications and legacy systems. Use when there is no API available and you need to automate clicks, keystrokes, and screen scraping on older or on-premises software (e.g., mainframe terminals, legacy ERP clients).
 - **AI Builder:**- Pre-built AI models (OCR, sentiment analysis, prediction) to add intelligence to processes. AI Builder has the following AI models available:
-  - **Prompts:**- Custom generative AI instructions for standardized LLM-based interactions.
+  - **Prompts:**- Custom generative AI instructions for standardised LLM-based interactions.
   - **Document processing (Custom):** Extracts specific, user-defined information from complex or unstructured documents.
   - **Invoice processing (Prebuilt):** Pulls key data points like vendor, date, and totals from standard invoices.
   - **Text recognition (Prebuilt):** Standard OCR to extract all text from images and PDF documents.
@@ -41,7 +41,7 @@ The Power Platform provides a vast suite of tools that can be used in any digita
   - **Sentiment analysis (Prebuilt):** Scores text as positive, negative, or neutral (ideal for customer feedback).
   - **Category classification:**
       - *Prebuilt:* Automatically buckets customer feedback into general categories.
-      - *Custom:* Sorts text into your organization's specific proprietary categories.
+      - *Custom:* Sorts text into your organisation's specific proprietary categories.
   - **Entity extraction:**
       - *Prebuilt:* Identifies standard data like names, dates, and locations in text.
       - *Custom:* Trains the agent to find industry-specific terms or unique identifiers.
@@ -50,10 +50,10 @@ The Power Platform provides a vast suite of tools that can be used in any digita
   - **Text translation (Prebuilt):** Translates text across 90+ supported languages.
   - **Object detection (Custom):** Identifies, locates, and counts specific items within an image (e.g., inventory tracking).
   - **Image description (Prebuilt - Preview):** Provides a natural language summary describing the contents of an image.
-  - **Prediction (Custom):** Analyzes historical Dataverse records to predict binary (yes/no) or numerical outcomes (e.g., credit risk or project delays).
+  - **Prediction (Custom):** Analyses historical Dataverse records to predict binary (yes/no) or numerical outcomes (e.g., credit risk or project delays).
 - **Dataverse:**- The primary data platform for the Power Platform ecosystem. Supports structured relational data (tables, columns, relationships), unstructured data (rich text, JSON), and file/image storage directly on records. Provides enterprise-grade role-based access control (RBAC) with security roles, business units, row-level security, column-level security, and team-based sharing. Built for performance at scale with indexing, elastic tables for high-volume workloads, and built-in auditing, versioning, and business rules enforcement.
 - **Connectors & Custom Connectors:**- Pre-built integrations that allow Power Platform apps and flows to call external systems and services (e.g., SharePoint, SQL Server, Salesforce, SAP, ServiceNow). Over 1,500 standard connectors are available out of the box. Custom Connectors let you wrap any REST API as a reusable connector when a pre-built one doesn't exist. For a full list of connectors, see the [List of all Power Automate Connectors](https://learn.microsoft.com/en-us/connectors/connector-reference/connector-reference-powerautomate-connectors). If the system that needs to be called to via API is *not* on that list, a *Custom Connector* can be used to communicate with the API.
-- **Power BI:**- The analytics and reporting engine of the Power Platform. Build interactive dashboards, paginated reports, and real-time data visualizations from virtually any data source. Key capabilities include:
+- **Power BI:**- The analytics and reporting engine of the Power Platform. Build interactive dashboards, paginated reports, and real-time data visualisations from virtually any data source. Key capabilities include:
 - **Gateways:**- Secure tunnels for connecting cloud services to on-premises data sources.
 
 ### "Cheat Sheet" Decision Logic for Architecting
@@ -101,8 +101,8 @@ Your architecture recommendation will be business process oriented. Meaning, you
 
 NOTE: In your architecture recommendation you *should* include *users*! Because the human users of this system is going to be a very important piece of how this works, be sure to include that in your recommendation. Try to be specific as to what group of users (i.e. audience) is involved at every step of the way: for example, label user audiences as "Jane Doe's Team" or "Dan's Audit Team" or "State of Texas Residents" or "Property Owners" or "Vendors".
 
-### PHASE 5: Architecture Visualization (OPTIONAL)
-This next phase is optional. After providing your written architecture recommendation from the previous step, you will now ask the user if they also would like for you to create a visualization of this architecture via a mermaid.js diagram. It is a simple yes/no question. If they **DO** want one, this is how you will do it:
+### PHASE 5: Architecture Visualisation (OPTIONAL)
+This next phase is optional. After providing your written architecture recommendation from the previous step, you will now ask the user if they also would like for you to create a visualisation of this architecture via a mermaid.js diagram. It is a simple yes/no question. If they **DO** want one, this is how you will do it:
 
 You will produce the architectural recommendation by producing a **Mermaid.js diagram.** Your mermaid.js diagram will not be overly complicated. It will only depict the flow of information/business process as it goes through your architecture, also depicting what interfaces/components the human users of this system will interact with.
 

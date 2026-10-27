@@ -20,7 +20,7 @@ Instructions for generating high-quality Power Apps Code Apps using TypeScript, 
 
 ### Project Structure
 
-- Use well-organized folder structure with clear separation of concerns:
+- Use well-organised folder structure with clear separation of concerns:
   ```
   src/
   ├── components/          # Reusable UI components
@@ -76,7 +76,7 @@ Instructions for generating high-quality Power Apps Code Apps using TypeScript, 
 #### Custom Control Frameworks (PCF Controls)
 - **Integrate PCF controls**: Embed Power Apps Component Framework controls in Code Apps
   ```typescript
-  // Example: Using custom PCF control for data visualization
+  // Example: Using custom PCF control for data visualisation
   import { PCFControlWrapper } from './components/PCFControlWrapper';
 
   const MyComponent = () => {
@@ -134,7 +134,7 @@ Instructions for generating high-quality Power Apps Code Apps using TypeScript, 
   };
   ```
 - **Prediction models**: Integrate custom AI models for business predictions
-- **Sentiment analysis**: Analyze text sentiment using AI Builder
+- **Sentiment analysis**: Analyse text sentiment using AI Builder
 - **Object detection**: Implement image analysis and object recognition
 
 #### Power Virtual Agents Integration
@@ -217,11 +217,11 @@ Instructions for generating high-quality Power Apps Code Apps using TypeScript, 
 - **Complex relationship queries**: Use $expand and $filter for efficient data retrieval
 - **Relationship validation**: Implement business rules for relationship constraints
 
-### Performance Optimization
+### Performance Optimisation
 
 - Use React.memo and useMemo for expensive computations
 - Implement code splitting and lazy loading for large applications
-- Optimize bundle size with tree shaking
+- Optimise bundle size with tree shaking
 - Use efficient connector query patterns to minimize API calls
 - Implement proper pagination for large data sets
 
@@ -394,7 +394,7 @@ Instructions for generating high-quality Power Apps Code Apps using TypeScript, 
     return <button className={classes} onClick={onClick} disabled={disabled}>{children}</button>;
   };
   ```
-- **Design tokens**: Implement consistent spacing, colors, typography
+- **Design tokens**: Implement consistent spacing, colours, typography
 - **Component documentation**: Use Storybook for component documentation
 
 ##### Dark Mode and Theming Systems
@@ -463,7 +463,7 @@ Instructions for generating high-quality Power Apps Code Apps using TypeScript, 
   ```
 - **Loading states**: Animated skeletons and progress indicators
 - **Gesture recognition**: Swipe, pinch, and touch interactions
-- **Performance optimization**: Use CSS transforms and will-change property
+- **Performance optimisation**: Use CSS transforms and will-change property
 
 ##### Accessibility Automation and Testing
 - **ARIA implementation**: Proper semantic markup and ARIA attributes
@@ -495,7 +495,7 @@ Instructions for generating high-quality Power Apps Code Apps using TypeScript, 
   ```
 - **Automated accessibility testing**: Integrate axe-core for accessibility testing
 - **Keyboard navigation**: Implement full keyboard accessibility
-- **Screen reader optimization**: Test with NVDA, JAWS, and VoiceOver
+- **Screen reader optimisation**: Test with NVDA, JAWS, and VoiceOver
 
 ##### Internationalization (i18n) and Localization
 - **React-intl integration**: Multi-language support
@@ -564,7 +564,7 @@ Instructions for generating high-quality Power Apps Code Apps using TypeScript, 
 - **Build failures**: Verify all dependencies with `npm audit` and check build configuration
 - **Authentication errors**: Re-authenticate PAC CLI with `pac auth clear` then `pac auth create`
 - **Connector unavailable**: Verify connector setup in Power Platform and connection status
-- **Performance issues**: Optimize bundle size with `npm run build --report` and implement caching
+- **Performance issues**: Optimise bundle size with `npm run build --report` and implement caching
 - **Environment mismatch**: Confirm correct environment selection with `pac env list`
 - **App timeout errors**: Check build output and network connectivity
 
@@ -580,7 +580,7 @@ Instructions for generating high-quality Power Apps Code Apps using TypeScript, 
 1. **Follow Microsoft's official documentation and best practices**
 2. **Use TypeScript for type safety and better developer experience**
 3. **Implement proper error handling and user feedback**
-4. **Optimize for performance and user experience**
+4. **Optimise for performance and user experience**
 5. **Follow security best practices and Power Platform policies**
 6. **Write maintainable, testable, and well-documented code**
 7. **Use generated services and models from PAC CLI**

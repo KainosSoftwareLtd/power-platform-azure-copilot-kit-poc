@@ -16,7 +16,7 @@ applyTo: '**/azure-pipelines.yml, **/azure-pipelines*.yml, **/*.pipeline.yml'
 
 ## Pipeline Structure
 
-- Organize complex pipelines using stages for better visualization and control
+- Organise complex pipelines using stages for better visualisation and control
 - Use jobs to group related steps and enable parallel execution when possible
 - Implement proper dependencies between stages and jobs
 - Use templates for reusable pipeline components
@@ -37,7 +37,7 @@ applyTo: '**/azure-pipelines.yml, **/azure-pipelines*.yml, **/*.pipeline.yml'
 - Publish test results in standard formats (JUnit, VSTest, etc.)
 - Include code coverage reporting and quality gates
 - Implement integration and end-to-end tests in appropriate stages
-- Use test impact analysis when available to optimize test execution
+- Use test impact analysis when available to optimise test execution
 - Fail fast on test failures to provide quick feedback
 
 ## Security Considerations
@@ -67,13 +67,13 @@ applyTo: '**/azure-pipelines.yml, **/azure-pipelines*.yml, **/*.pipeline.yml'
 - Document variable purposes and expected values
 - Use variable templates for complex variable logic
 
-## Performance Optimization
+## Performance Optimisation
 
 - Use parallel jobs and matrix strategies when appropriate
 - Implement proper caching strategies for dependencies and build outputs
 - Use shallow clone for Git operations when full history isn't needed
-- Optimize Docker image builds with multi-stage builds and layer caching
-- Monitor pipeline performance and optimize bottlenecks
+- Optimise Docker image builds with multi-stage builds and layer caching
+- Monitor pipeline performance and optimise bottlenecks
 - Use pipeline resource triggers efficiently
 
 ## Monitoring and Observability
@@ -83,7 +83,7 @@ applyTo: '**/azure-pipelines.yml, **/azure-pipelines*.yml, **/*.pipeline.yml'
 - Implement proper notification strategies for failures and successes
 - Include deployment health checks and automated rollback triggers
 - Use pipeline analytics to identify improvement opportunities
-- Document pipeline behavior and troubleshooting steps
+- Document pipeline behaviour and troubleshooting steps
 
 ## Template and Reusability
 
