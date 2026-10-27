@@ -34,4 +34,4 @@ Reusable GitHub Copilot customisations for Microsoft Power Platform and related 
 1. Select the Power Platform Story Refinement agent and ask it to assess a sample story. Review its evidence and refinement questions; it drafts content but does not create or update Azure DevOps work items.
 2. Edit `examples/kainos-standards-poc/README.md` with Copilot. Inspect the response references to confirm the local standards POC was applied, and note that its generic rules are not approved Kainos policy.
 3. Ask Copilot to propose a Dataverse schema name while editing `examples/dataverse-project-poc/README.md`. The publisher prefix is deliberately unset, so the project instruction should prompt for the real project value rather than invent one.
-4. Use VS Code's Agent Customizations diagnostics and response references to inspect which instructions were discovered. If a file is missing, check the selected harness and Agent Debug Logs.
+4. Use VS Code's Agent Customisations diagnostics and response references to inspect which instructions were discovered. If a file is missing, check the selected harness and Agent Debug Logs.
