@@ -1,0 +1,1 @@
+When a change affects this repository's documented purpose, customization inventory, file structure, or usage, update the relevant README.md content in the same task. Do not update the README for unrelated changes. Preserve its existing structure and keep descriptions aligned with the files that exist.
