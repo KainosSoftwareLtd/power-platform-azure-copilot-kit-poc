@@ -1,0 +1,45 @@
+Please assess this story for refinement.
+
+As a line manager, I want expense claims over £500 to be routed to me for
+approval in Teams, so that high-value spend is reviewed before payment.
+
+Acceptance criteria:
+1. A claim over £500 is automatically sent to the submitter's line manager.
+2. The manager can approve or reject from Microsoft Teams.
+3. The submitter is notified of the outcome.
+4. All approval decisions are auditable for 7 years.
+5. Only managers can see claims from their direct reports.
+
+Context: Model-driven app on Dataverse, Microsoft 365 licences.
+
+Prompt 1: Start the ADR
+
+Create an ADR for a media gallery performance problem.
+
+This is a demonstration only. Use a synthetic scenario and don't treat anything
+as a verified project fact.
+
+Title: Media Gallery Test
+
+
+Context: Our media gallery uses Power Automate. Users complain it is slow and
+gets throttled. Dataverse image columns would cost too much.
+
+Decision: Replace the Power Automate path with a Dataverse Custom API defined
+as an Action, implemented by a synchronous plug-in, and called through the
+Dataverse Web API using HTTP POST.
+
+Alternatives: keep the Power Automate flow, use Dataverse image columns, or
+make no change.
+
+Stakeholder: a synthetic project stakeholder, with no real person named.
+Status: Proposed. Date: 2026-10-27. Authors: "Demonstration example".
+Use ADR number 0002 and save it in docs/adr/.
+
+Prompt 2: Tighten the unverified claims (if needed)
+
+Make sure the ADR doesn't present the latency, throttling or cost claims as
+measured facts. Label them as assumptions in Context, add a demonstration
+disclaimer under the title, and add Implementation Notes for measuring a
+baseline, load testing and monitoring before retiring the existing path.
+Reference the Microsoft Learn pages for Custom APIs and plug-ins.
